@@ -53,7 +53,7 @@ class Transaction:
         self._tx_raw = tx.TxRaw()
 
     def add_swap_exact_amount_in(
-        self, amount: int, routes, denom: str = "uosmo", hrp: str = "osmo"
+        self, amount: int, amount_out_min: int, routes, denom: str = "uosmo", hrp: str = "osmo"
     ) -> None:
         msg = tx_osmo.MsgSwapExactAmountIn()
         msg.sender = privkey_to_address(self._privkey, hrp=hrp)
