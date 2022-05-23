@@ -14,7 +14,7 @@ import cosmospy.interfaces.coin_pb2 as coin
 import cosmospy.interfaces.msg_send_pb2 as transfer
 import cosmospy.interfaces.pubkey_pb2 as pubkey
 import cosmospy.interfaces.tx_pb2 as tx
-import cosmospy.interfaces.tx_osmo as tx_osmo
+import cosmospy.interfaces.tx_osmo_pb2 as tx_osmo
 
 class Transaction:
     """A Cosmos transaction.
