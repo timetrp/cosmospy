@@ -1,1 +1,3 @@
  protoc -I="/home/time/cosmospy/src/cosmospy/proto" --python_out="/home/time/cosmospy/src/cosmospy/interfaces" "/home/time/cosmospy/src/cosmospy/proto/query.proto"
+
+ python -m grpc_tools.protoc --proto_path=/home/time/cosmospy/src/cosmospy/proto --python_out=/home/time/cosmospy/src/cosmospy/interfaces --grpc_python_out=/home/time/cosmospy/src/cosmospy/interfaces query.proto 
