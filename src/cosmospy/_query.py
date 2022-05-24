@@ -18,6 +18,6 @@ class Query(object):
         """
         Client function to call the rpc for GetServerResponse
         """
-        message = pb2.QueryPoolParamsRequest(message=message)
+        message = pb2.QueryPoolsRequest(message="")
         print(f'{message}')
         return self.stub.Pools(message)
