@@ -2,7 +2,7 @@
 """Client and server classes corresponding to protobuf-defined services."""
 import grpc
 
-import query_pb2 as query__pb2
+import cosmospy.interfaces.query_pb2 as query__pb2
 
 
 class QueryStub(object):
