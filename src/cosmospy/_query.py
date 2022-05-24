@@ -14,10 +14,10 @@ class Query(object):
         # bind the client and the server
         self.stub = pb2_grpc.QueryStub(self.channel)
 
-    def get_pools(self, message):
+    def get_pools(self):
         """
         Client function to call the rpc for GetServerResponse
         """
-        message = pb2.QueryPoolsRequest(message="")
+        message = pb2.QueryPoolsRequest()
         print(f'{message}')
         return self.stub.Pools(message)
