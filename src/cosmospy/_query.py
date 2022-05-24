@@ -8,8 +8,7 @@ class Query(object):
         # self.server_port = 50051
 
         # instantiate a channel
-        self.channel = grpc.insecure_channel(
-            '{}'.format(self.host))
+        self.channel = grpc.insecure_channel(self.host)
 
         # bind the client and the server
         self.stub = pb2_grpc.QueryStub(self.channel)
@@ -19,5 +18,5 @@ class Query(object):
         Client function to call the rpc for GetServerResponse
         """
         message = pb2.QueryPoolsRequest()
-        print(f'{message}')
-        return self.stub.Pools(message)
+        print('test')
+        return  self.stub.Pools(message)
