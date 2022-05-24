@@ -30,7 +30,7 @@ dependencies = [
     "requests==2.26.0",
     "protobuf >= 3.19.1",
     "google >= 3.0.0",
-
+    "grpcio >=1.46.3"
 ]
 
 [project.urls]

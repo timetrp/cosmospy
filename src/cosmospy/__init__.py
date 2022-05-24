@@ -8,3 +8,4 @@ from cosmospy._wallet import privkey_to_address as privkey_to_address  # noqa: F
 from cosmospy._wallet import privkey_to_pubkey as privkey_to_pubkey  # noqa: F401
 from cosmospy._wallet import pubkey_to_address as pubkey_to_address  # noqa: F401
 from cosmospy._wallet import seed_to_privkey as seed_to_privkey  # noqa: F401
+from cosmospy._pool import Pool as Pool
