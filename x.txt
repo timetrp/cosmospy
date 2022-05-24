@@ -1,0 +1,1 @@
+ protoc -I="/home/time/cosmospy/src/cosmospy/proto" --python_out="/home/time/cosmospy/src/cosmospy/interfaces" "/home/time/cosmospy/src/cosmospy/proto/query.proto"
