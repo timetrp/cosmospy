@@ -4,7 +4,7 @@ import cosmospy.interfaces.query_pb2_grpc as pb2_grpc
 import grpc
 class Query(object):
     def __init__(self):
-        self.host = 'https://rpc-osmosis.blockapsis.com/'
+        self.host = 'https://rpc-osmosis.blockapsis.com:443/'
         # self.server_port = 50051
 
         # instantiate a channel
